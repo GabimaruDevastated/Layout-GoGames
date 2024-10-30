@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Josefin";
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf) format(truetype);
+}
+
+$blue: #355070;
+$purple: #6D597A;
+$light-purple: #B56576;
+$light-red: #E56B6F;
+$light-yellow: #EAAC8B;
+
+
+body {
+    font-family: "Josefin";
+    font-size: 18px;
+}
+
+section {
+    min-height: 100svh;
+}
+
