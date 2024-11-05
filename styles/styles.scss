@@ -64,11 +64,16 @@ section {
     background-size: 220% auto;
     color: white;
     font-weight: 600;
+    text-wrap: nowrap;
     transition: background-position .5s ease-in-out;
 
     &:hover,
     &:focus-within {
         background-position: left top;
+    }
+
+    &:active {
+        opacity: 0.8;
     }
 }
 
@@ -104,28 +109,28 @@ section {
             background: $blue;
         }
     }
+}
 
-    span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: $light-purple;
-        transition: background 0.2s ease-in-out;
-    }
+.burger-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $light-purple;
+    transition: background 0.2s ease-in-out;
+}
 
-    span:nth-child(1) {
-        top: 0;
-    }
+.burger-line:nth-child(1) {
+    top: 0;
+}
 
-    span:nth-child(2) {
-        top: 50%;
-        transform: translateY(-50%);
-    }
+.burger-line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-    span:nth-child(3) {
-        bottom: 0;
-    }
+.burger-line:nth-child(3) {
+    bottom: 0;
 }
 
 .x-img {
@@ -211,4 +216,63 @@ section {
 
 .gear {
     animation: 8s linear infinite rotating;
+}
+
+.prices__card {
+    max-width: 360px;
+    width: 100%;
+    border-radius: 25px;
+    padding: clamp(20px, 3vw, 45px);
+    background: #FBDACF;
+
+    &:nth-child(2) {
+        background: url(../image/prices/prices_standard.png) center / cover;
+        background-position: left 0 bottom 0;
+        color: #fff;
+
+        .card__pluses .card__plus::before {
+            background: url(../image/prices/plus-arrow-light.svg) center / cover;
+        }
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+.card__value {
+    font-weight: bold;
+    color: $light-red;
+    line-height: normal;
+}
+
+.card__valute {
+    font-size: 27px;
+}
+
+.card__price {
+    font-size: clamp(32px, 3.8vw, 50px);
+}
+
+.card__pluses {
+    margin-bottom: 50px;
+}
+
+.card__plus {
+    margin-bottom: 20px;
+    padding-left: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        background: url(../image/prices/plus-arrow.svg) center / cover;
+        position: absolute;
+        left: 0;
+        top: 25%;
+        width: 13px;
+        height: 10px;
+    }
 }

@@ -56,10 +56,14 @@ section {
   background-size: 220% auto;
   color: white;
   font-weight: 600;
+  text-wrap: nowrap;
   transition: background-position 0.5s ease-in-out;
 }
 .button:hover, .button:focus-within {
   background-position: left top;
+}
+.button:active {
+  opacity: 0.8;
 }
 
 .list__item {
@@ -89,7 +93,8 @@ section {
 .button_burger:hover::before, .button_burger:hover::after, .button_burger:hover span {
   background: #446381;
 }
-.button_burger span {
+
+.burger-line {
   position: absolute;
   left: 0;
   width: 100%;
@@ -97,14 +102,17 @@ section {
   background: #B56576;
   transition: background 0.2s ease-in-out;
 }
-.button_burger span:nth-child(1) {
+
+.burger-line:nth-child(1) {
   top: 0;
 }
-.button_burger span:nth-child(2) {
+
+.burger-line:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-.button_burger span:nth-child(3) {
+
+.burger-line:nth-child(3) {
   bottom: 0;
 }
 
@@ -182,4 +190,59 @@ section {
 
 .gear {
   animation: 8s linear infinite rotating;
+}
+
+.prices__card {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 25px;
+  padding: clamp(20px, 3vw, 45px);
+  background: #FBDACF;
+}
+.prices__card:nth-child(2) {
+  background: url(../image/prices/prices_standard.png) center/cover;
+  background-position: left 0 bottom 0;
+  color: #fff;
+}
+.prices__card:nth-child(2) .card__pluses .card__plus::before {
+  background: url(../image/prices/plus-arrow-light.svg) center/cover;
+}
+.prices__card h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card__value {
+  font-weight: bold;
+  color: #EB8382;
+  line-height: normal;
+}
+
+.card__valute {
+  font-size: 27px;
+}
+
+.card__price {
+  font-size: clamp(32px, 3.8vw, 50px);
+}
+
+.card__pluses {
+  margin-bottom: 50px;
+}
+
+.card__plus {
+  margin-bottom: 20px;
+  padding-left: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.card__plus::before {
+  content: "";
+  background: url(../image/prices/plus-arrow.svg) center/cover;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 13px;
+  height: 10px;
 }/*# sourceMappingURL=styles.css.map */
