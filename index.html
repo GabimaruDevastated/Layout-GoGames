@@ -5,12 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="./image/favicon.ico" />
         <link rel="stylesheet" href="./styles/styles.css">
-        <script async src="public/main.js"></script>
         <title>GoGames</title>
     </head>
     <body>
-        <header class="absolute left-1/2 -translate-x-1/2 top-0 z-20 pt-5 max-w-[1200px] w-full">
-            <div class="case flex items-center justify-between max-w-[1200px] w-full">
+        <header class="absolute left-1/2 -translate-x-1/2 top-0 z-20 pt-6 max-w-[1200px] w-full">
+            <div class="case flex items-center justify-between max-w-[1200px] w-full gap-5">
                 <a href="" class="w-[12.5rem]"><img src="./image/logo.png" width="280" height="78" alt=""></a>
                 <div class="max-lg:hidden flex items-center gap-14">
                     <nav>
@@ -31,7 +30,7 @@
             </div>
         </header>
         <main>
-            <section id="welcome" class="bg-[url('../image/bg1.png')] py-24">
+            <section id="welcome" class="bg-[url('../image/bg1.png')] bg-cover">
                 <div class="case max-w-[1200px] md:grid md:grid-cols-2 max-md:flex max-md:flex-col-reverse items-center lg:gap-12 max-md:gap-5">
                     <div class="relative">
                         <p class="subtitle flex gap-4 md:gap-8">Gaming Consoles <img class="w-28 max-md:w-20" src="./image/welcome/arrows.svg" alt=""></p>
@@ -53,7 +52,7 @@
                 </div>
             </section>
 
-            <section id="about" class="py-24">
+            <section id="about">
                 <div class="case flex max-md:flex-col justify-center items-center gap-10">
                     <img class="lg:hidden max-md:max-w-md md:max-w-[50%] w-full" src="./image/about/illutration.svg" alt="">
                     <div class="relative max-w-xl max-lg:hidden">
@@ -61,7 +60,7 @@
                         <img class="tv absolute -top-5 right-8 [zoom:0.82]" src="./image/about/tv.svg" alt="">
                     </div>
                     <div class="about__text md:max-w-[50%]">
-                        <p class="subtitle flex gap-4 md:gap-8">About VR Glasses</p>
+                        <p class="subtitle">About VR Glasses</p>
                         <h2 class="title">The New VR Glasses Series</h2>
                         <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
                         <a href="#!" class="button">Get Started Now</a>
@@ -69,15 +68,19 @@
                 </div>
             </section>
 
-            <section id="about-pc" class="py-24 bg-[url(../image/about-pc/about-pc_bg.png)]">
+            <section id="about-pc" class="bg-[url(../image/about-pc/about-pc_bg.png)] bg-cover">
                 <div class="case flex max-md:flex-col-reverse justify-center items-center gap-8">
                     <div class="md:max-w-[50%]">
-                        <p class="subtitle flex gap-4 md:gap-8">About XBOX, PS</p>
+                        <p class="subtitle">About XBOX, PS</p>
                         <h2 class="title">The New Xbox, Ps Series</h2>
                         <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
                         <a href="#!" class="button">Get Started Now</a>
                     </div>
-                    <div class="">
+                    <div class="relative max-lg:hidden pr-5">
+                        <img src="./image/about-pc/bg-gamepad.svg" alt="">
+                        <img class="gear absolute top-16 left-[42%] z-[1]" src="./image/about-pc/gear.svg" alt="">
+                        <img class="gear absolute top-0 left-[53%]" src="./image/about-pc/gear-big.svg" alt="">
+                        <img class="gamepad absolute top-[19%] left-1" src="./image/about-pc/gamepad.svg" alt="">
                     </div>
                     <img class="lg:hidden max-md:max-w-md md:max-w-[50%] w-full" src="./image/about-pc/about-pc_scene.svg" alt="">
                 </div>

@@ -21,7 +21,7 @@ section {
   align-items: center;
   background-color: #FFE6D7;
   min-height: 100svh;
-  padding: 6rem 0;
+  padding: 8rem 0 6rem 0;
 }
 
 .case {
@@ -82,8 +82,8 @@ section {
 }
 
 .button_burger {
-  width: 40px;
-  height: 30px;
+  width: 45px;
+  height: 25px;
   position: relative;
 }
 .button_burger:hover::before, .button_burger:hover::after, .button_burger:hover span {
@@ -161,8 +161,8 @@ section {
   background-repeat: no-repeat;
 }
 
-.tv {
-  animation: 3.5s linear infinite flying;
+.tv, .gamepad {
+  animation: 4s linear infinite flying;
 }
 
 @keyframes flying {
@@ -178,4 +178,8 @@ section {
   background-position: bottom 0 right 50%, center;
   background-size: 75%, cover;
   background-repeat: no-repeat;
+}
+
+.gear {
+  animation: 8s linear infinite rotating;
 }/*# sourceMappingURL=styles.css.map */
