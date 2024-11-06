@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
     font-family: "Josefin";
     src: url(../fonts/JosefinSans-VariableFont_wght.ttf) format(truetype);
@@ -12,6 +13,8 @@ $purple: #826F8C;
 $light-purple: #B56576;
 $light-red: #EB8382;
 $light-yellow: #EAAC8B;
+
+
 
 html {
     scroll-behavior: smooth;
@@ -27,9 +30,9 @@ section {
     display: flex;
     justify-content: center;
     background-color: #FFE6D7;
-    min-height: 100%;
     padding: 8rem 0 6rem 0;
 }
+
 
 .case {
     padding: 0 20px;
@@ -140,48 +143,13 @@ section {
     animation: 8s linear infinite rotating;
 }
 
-@keyframes rotating {
-    0% {
-        rotate: 0;
-    }
-
-    100% {
-        rotate: 360deg;
-    }
-}
-
 .joy {
     opacity: 0;
     animation: 1s 1.2s ease-in-out joy forwards;
 }
 
-@keyframes joy {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 100%;
-    }
-}
-
 .boy {
     animation: 0.9s 0.5s ease-in-out boy both;
-}
-
-
-@keyframes boy {
-    0% {
-        opacity: 0;
-        top: 100px;
-    }
-
-    100% {
-        opacity: 100%;
-        top: 0;
-    }
 }
 
 #about {
@@ -193,16 +161,6 @@ section {
 
 .tv, .gamepad {
     animation: 4s linear infinite flying;
-}
-
-@keyframes flying {
-    0%, 100% {
-        transform: none;
-    }
-
-    50% {
-        transform: translateY(-5%);
-    }
 }
 
 .about__text {
@@ -272,5 +230,78 @@ section {
         top: 25%;
         width: 13px;
         height: 10px;
+    }
+}
+
+footer {
+    background-color: #FFE6D7;
+}
+
+.footer-link {
+    background-color: #FCD8CB;
+    min-width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s ease-in-out;
+
+    path {
+        transition: fill .3s ease-in-out;
+    }
+
+    &:hover {
+        background-color: $blue;
+
+        path {
+            fill: #fff;
+        }
+    }
+}
+
+
+
+@keyframes rotating {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes joy {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+@keyframes boy {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+
+    100% {
+        opacity: 100%;
+        top: 0;
+    }
+}
+
+@keyframes flying {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: translateY(-5%);
     }
 }

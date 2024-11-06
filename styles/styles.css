@@ -19,7 +19,6 @@ section {
   display: flex;
   justify-content: center;
   background-color: #FFE6D7;
-  min-height: 100%;
   padding: 8rem 0 6rem 0;
 }
 
@@ -123,43 +122,15 @@ section {
   animation: 8s linear infinite rotating;
 }
 
-@keyframes rotating {
-  0% {
-    rotate: 0;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
 .joy {
   opacity: 0;
   animation: 1s 1.2s ease-in-out joy forwards;
 }
 
-@keyframes joy {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 100%;
-  }
-}
 .boy {
   animation: 0.9s 0.5s ease-in-out boy both;
 }
 
-@keyframes boy {
-  0% {
-    opacity: 0;
-    top: 100px;
-  }
-  100% {
-    opacity: 100%;
-    top: 0;
-  }
-}
 #about {
   background-image: url(../image/about/bg-men.png);
   background-position: top 0 right 0, center;
@@ -171,14 +142,6 @@ section {
   animation: 4s linear infinite flying;
 }
 
-@keyframes flying {
-  0%, 100% {
-    transform: none;
-  }
-  50% {
-    transform: translateY(-5%);
-  }
-}
 .about__text {
   background-image: url(../image/about/bg-vr.png);
   background-position: bottom 0 right 50%, center;
@@ -243,4 +206,65 @@ section {
   top: 25%;
   width: 13px;
   height: 10px;
+}
+
+footer {
+  background-color: #FFE6D7;
+}
+
+.footer-link {
+  background-color: #FCD8CB;
+  min-width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.footer-link path {
+  transition: fill 0.3s ease-in-out;
+}
+.footer-link:hover {
+  background-color: #446381;
+}
+.footer-link:hover path {
+  fill: #fff;
+}
+
+@keyframes rotating {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes joy {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+@keyframes boy {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    opacity: 100%;
+    top: 0;
+  }
+}
+@keyframes flying {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5%);
+  }
 }/*# sourceMappingURL=styles.css.map */
