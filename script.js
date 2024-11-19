@@ -1,8 +1,8 @@
 const body = document.querySelector("body"),
-    header = document.querySelector("header"),
-    headerButton = document.querySelector(".button_burger"),
-    nav = document.querySelector(".nav"),
-    navItem = document.querySelectorAll(".item__link");
+    header = body.querySelector("header"),
+    headerButton = header.querySelector(".button_burger"),
+    nav = header.querySelector(".nav"),
+    navItem = nav.querySelectorAll(".item__link");
 
 headerButton.addEventListener("click", () => {
     headerButton.classList.toggle("burger_active");
