@@ -2,19 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
     font-family: "Josefin";
     src: url(../fonts/JosefinSans-VariableFont_wght.ttf) format(truetype);
 }
 
 $blue: #446381;
-$purple: #826F8C;
-$light-purple: #B56576;
-$light-red: #EB8382;
-$light-yellow: #EAAC8B;
-
-
+$purple: #826f8c;
+$light-purple: #b56576;
+$light-red: #eb8382;
+$light-yellow: #eaac8b;
 
 html {
     scroll-behavior: smooth;
@@ -30,7 +27,7 @@ body {
 section {
     display: flex;
     justify-content: center;
-    background-color: #FFE6D7;
+    background-color: #ffe6d7;
     padding: 8rem 0 6rem 0;
 }
 
@@ -68,7 +65,7 @@ section {
     color: white;
     font-weight: 600;
     text-wrap: nowrap;
-    transition: background-position .5s ease-in-out;
+    transition: background-position 0.5s ease-in-out;
 
     &:hover,
     &:focus-within {
@@ -96,7 +93,7 @@ section {
     width: fit-content;
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: 0;
@@ -118,7 +115,9 @@ section {
     position: relative;
 
     &:hover {
-        &::before, &::after, span {
+        &::before,
+        &::after,
+        span {
             background: $blue;
         }
     }
@@ -130,36 +129,33 @@ section {
     width: 100%;
     height: 2px;
     background: $light-purple;
-    transition: background 0.2s ease-in-out,
-                top 0.4s ease-in-out,
-                bottom 0.4s ease-in-out,
-                transform 0.4s ease-in-out;
+    transition: background 0.2s ease-in-out, top 0.4s ease-in-out, bottom 0.4s ease-in-out,
+        transform 0.4s ease-in-out;
 
     &:nth-child(1) {
         top: 0;
     }
-    
+
     &:nth-child(2) {
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
     &:nth-child(3) {
         bottom: 0;
     }
 }
 
-
-.burger_active  {
+.burger_active {
     .burger-line:nth-child(1) {
         top: 50%;
         transform: rotate(45deg);
     }
-    
+
     .burger-line:nth-child(2) {
         transform: scale(0);
     }
-    
+
     .burger-line:nth-child(3) {
         bottom: 50%;
         transform: rotate(-45deg);
@@ -189,7 +185,8 @@ section {
     background-repeat: no-repeat;
 }
 
-.tv, .gamepad {
+.tv,
+.gamepad {
     animation: 4s linear infinite flying;
 }
 
@@ -209,7 +206,7 @@ section {
     width: 100%;
     border-radius: 25px;
     padding: clamp(20px, 3vw, 45px);
-    background: #FBDACF;
+    background: #fbdacf;
 
     &:nth-child(2) {
         background: url(../image/prices/prices_standard.png) center / cover;
@@ -253,7 +250,7 @@ section {
     align-items: center;
 
     &::before {
-        content: '';
+        content: "";
         background: url(../image/prices/plus-arrow.svg) center / cover;
         position: absolute;
         left: 0;
@@ -264,21 +261,21 @@ section {
 }
 
 footer {
-    background-color: #FFE6D7;
+    background-color: #ffe6d7;
 }
 
 .footer-link {
-    background-color: #FCD8CB;
+    background-color: #fcd8cb;
     min-width: 40px;
     padding: 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 
     path {
-        transition: fill .3s ease-in-out;
+        transition: fill 0.3s ease-in-out;
     }
 
     &:hover {
@@ -289,7 +286,6 @@ footer {
         }
     }
 }
-
 
 @media (max-width: 1023.98px) {
     .lock-screen {
@@ -313,10 +309,9 @@ footer {
         min-height: 100vh;
         background-color: #fff;
         transform: translateX(calc(100% + 6vw));
-        transition: 0.85s transform ease-in-out,
-                    0.85s border-radius ease-in-out;
+        transition: 0.85s transform ease-in-out, 0.85s border-radius ease-in-out;
     }
-    
+
     .nav_active {
         border-radius: 0;
         transform: translate(0);
@@ -337,8 +332,6 @@ footer {
         width: 100%;
     }
 }
-
-
 
 @keyframes rotating {
     0% {
@@ -375,7 +368,8 @@ footer {
 }
 
 @keyframes flying {
-    0%, 100% {
+    0%,
+    100% {
         transform: none;
     }
 

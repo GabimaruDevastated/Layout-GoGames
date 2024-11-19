@@ -19,7 +19,7 @@ body {
 section {
   display: flex;
   justify-content: center;
-  background-color: #FFE6D7;
+  background-color: #ffe6d7;
   padding: 8rem 0 6rem 0;
 }
 
@@ -37,12 +37,12 @@ section {
   font-size: clamp(2.125rem, 1.2849rem + 3.9535vw, 4.25rem);
   font-weight: 700;
   line-height: normal;
-  color: #EB8382;
+  color: #eb8382;
   margin-left: -2px;
 }
 
 .text {
-  color: #826F8C;
+  color: #826f8c;
   margin-top: 20px;
   margin-bottom: 25px;
 }
@@ -101,7 +101,8 @@ section {
   height: 25px;
   position: relative;
 }
-.button_burger:hover::before, .button_burger:hover::after, .button_burger:hover span {
+.button_burger:hover::before, .button_burger:hover::after,
+.button_burger:hover span {
   background: #446381;
 }
 
@@ -110,7 +111,7 @@ section {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #B56576;
+  background: #b56576;
   transition: background 0.2s ease-in-out, top 0.4s ease-in-out, bottom 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 .burger-line:nth-child(1) {
@@ -159,7 +160,8 @@ section {
   background-repeat: no-repeat;
 }
 
-.tv, .gamepad {
+.tv,
+.gamepad {
   animation: 4s linear infinite flying;
 }
 
@@ -179,7 +181,7 @@ section {
   width: 100%;
   border-radius: 25px;
   padding: clamp(20px, 3vw, 45px);
-  background: #FBDACF;
+  background: #fbdacf;
 }
 .prices__card:nth-child(2) {
   background: url(../image/prices/prices_standard.png) center/cover;
@@ -196,7 +198,7 @@ section {
 
 .card__value {
   font-weight: bold;
-  color: #EB8382;
+  color: #eb8382;
   line-height: normal;
 }
 
@@ -230,11 +232,11 @@ section {
 }
 
 footer {
-  background-color: #FFE6D7;
+  background-color: #ffe6d7;
 }
 
 .footer-link {
-  background-color: #FCD8CB;
+  background-color: #fcd8cb;
   min-width: 40px;
   padding: 10px;
   border-radius: 50%;
