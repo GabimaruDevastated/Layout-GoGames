@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="./image/favicon.ico" />
         <link rel="stylesheet" href="./styles/styles.css" />
-        <script async src="./script.js"></script>
+        <script defer src="./script.js"></script>
         <title>GoGames</title>
     </head>
 
@@ -34,8 +34,7 @@
 
         <main>
             <section
-                id="welcome"
-                class="bg-[url('../image/welcome/bg-welcome.png')] bg-center bg-cover"
+                class="welcome bg-[url('../image/welcome/bg-welcome.png')] bg-center bg-cover"
             >
                 <div
                     class="case md:grid md:grid-cols-2 max-md:flex max-md:flex-col-reverse items-center lg:gap-12 max-lg:gap-5"
@@ -46,6 +45,8 @@
                             <img
                                 class="w-28 max-md:w-20"
                                 src="./image/welcome/arrows.svg"
+                                width="129"
+                                height="29"
                                 loading="lazy"
                                 alt=""
                             />
@@ -63,6 +64,8 @@
                         <img
                             class="x-img max-lg:hidden"
                             src="image/welcome/x.svg"
+                            width="118"
+                            height="118"
                             loading="lazy"
                             alt=""
                         />
@@ -72,32 +75,39 @@
                             class="absolute top-20"
                             src="./image/welcome/hero-boy-bg.png"
                             width="550"
+                            height="497"
                             alt=""
-                            loading="lazy"
                         />
                         <div class="relative -left-4">
                             <img
                                 class="joy absolute w-full left-[7%] bottom-[68%]"
                                 src="./image/welcome/hero-joy.svg"
+                                width="474"
+                                height="124"
                                 alt=""
                                 loading="lazy"
                             />
                             <img
                                 class="boy relative -left-3"
                                 src="./image/welcome/hero-boy.svg"
+                                width="543"
+                                height="585"
                                 alt=""
-                                loading="lazy"
                             />
                         </div>
                         <img
                             class="absolute -top-2 -left-24"
                             src="./image/welcome/card1.svg"
+                            width="252"
+                            height="135"
                             alt=""
                             loading="lazy"
                         />
                         <img
                             class="absolute -bottom-7 -right-4"
                             src="./image/welcome/card2.svg"
+                            width="252"
+                            height="135"
                             alt=""
                             loading="lazy"
                         />
@@ -105,19 +115,23 @@
                     <img
                         class="w-full max-md:max-w-md lg:hidden"
                         src="./image/welcome/hero-scene.svg"
+                        width="779"
+                        height="657"
                         loading="lazy"
                         alt=""
                     />
                 </div>
             </section>
 
-            <section id="about">
+            <section class="about">
                 <div
                     class="case md:grid md:grid-cols-2 max-md:flex max-md:flex-col items-center gap-10"
                 >
                     <img
                         class="lg:hidden max-md:max-w-md w-full"
                         src="./image/about/illutration.svg"
+                            width="557"
+                            height="587"
                         loading="lazy"
                         alt=""
                     />
@@ -125,12 +139,16 @@
                         <img
                             class="relative"
                             src="./image/about/about_scene-without-tv.svg"
+                            width="557"
+                            height="572"
                             loading="lazy"
                             alt=""
                         />
                         <img
                             class="tv absolute -top-5 right-8 [zoom:0.82]"
                             src="./image/about/tv.svg"
+                            width="289"
+                            height="389"
                             loading="lazy"
                             alt=""
                         />
@@ -150,8 +168,7 @@
             </section>
 
             <section
-                id="about-pc"
-                class="bg-[url(../image/about-pc/about-pc_bg.png)] bg-center bg-cover"
+                class="about-pc bg-[url(../image/about-pc/about-pc_bg.png)] bg-center bg-cover"
             >
                 <div
                     class="case md:grid md:grid-cols-2 max-md:flex max-md:flex-col-reverse items-center gap-8"
@@ -172,18 +189,24 @@
                         <img
                             class="gear absolute top-16 left-[41%]"
                             src="./image/about-pc/gear.svg"
+                            width="84"
+                            height="84"
                             loading="lazy"
                             alt=""
                         />
                         <img
                             class="gear absolute top-0 left-[53%]"
                             src="./image/about-pc/gear-big.svg"
+                            width="137"
+                            height="138"
                             loading="lazy"
                             alt=""
                         />
                         <img
                             class="gamepad absolute bottom-0 -left-1"
                             src="./image/about-pc/gamepad.svg"
+                            width="523"
+                            height="419"
                             loading="lazy"
                             alt=""
                         />
@@ -191,13 +214,15 @@
                     <img
                         class="lg:hidden max-md:max-w-md w-full"
                         src="./image/about-pc/about-pc_scene.svg"
+                        width="634"
+                        height="567"
                         loading="lazy"
                         alt=""
                     />
                 </div>
             </section>
 
-            <section id="prices">
+            <section class="prices">
                 <div class="case w-full flex flex-col justify-center gap-8">
                     <div class="text-center">
                         <p class="subtitle">Our Pricing</p>

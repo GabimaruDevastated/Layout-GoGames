@@ -153,7 +153,7 @@ section {
   animation: 0.9s 0.5s ease-in-out boy both;
 }
 
-#about {
+.about {
   background-image: url(../image/about/bg-men.png);
   background-position: top 0 right 0, center;
   background-size: 40%, cover;
